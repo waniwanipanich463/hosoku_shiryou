@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>つむぎ部屋 | 補足資料まとめ (PREVIEW)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --fuchsia: #FF00FF;
+            --violet: #9400D3;
+            --blue: #1E90FF;
+            --cyan: #00FFFF;
+            --yellow: #FFD700;
+            --bg-dark: #0a0510;
+            --card-bg: rgba(20, 10, 30, 0.8);
+            --border-glow: 0 0 10px rgba(0, 255, 255, 0.5);
+            --neon-fuchsia: 0 0 15px #FF00FF;
+            --neon-cyan: 0 0 15px #00FFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: #fff;
+            font-family: 'Noto Sans JP', sans-serif;
+            overflow-x: hidden;
+            background-image: 
+                linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
+                linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+            background-size: 100% 4px, 3px 100%;
+        }
+
+        .crt-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.1) 50%),
+                        linear-gradient(90deg, rgba(255, 0, 0, 0.05), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.05));
+            background-size: 100% 2px, 3px 100%;
+            z-index: 1000;
+            pointer-events: none;
+            opacity: 0.3;
+        }
+
+        .scanlines {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                to bottom,
+                rgba(255,255,255,0) 0%,
+                rgba(255,255,255,0.05) 50%,
+                rgba(255,255,255,0) 100%
+            );
+            background-size: 100% 100%;
+            z-index: 1001;
+            pointer-events: none;
+            animation: scanline 10s linear infinite;
+        }
+
+        @keyframes scanline {
+            0% { transform: translateY(-100%); }
+            100% { transform: translateY(100%); }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            padding: 60px 0;
+            text-align: center;
+            border-bottom: 2px solid var(--cyan);
+            box-shadow: 0 0 20px var(--cyan);
+            background: rgba(0, 0, 0, 0.5);
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 3rem;
+            color: var(--cyan);
+            text-shadow: var(--neon-cyan);
+            letter-spacing: 4px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: var(--fuchsia);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: var(--neon-fuchsia);
+        }
+
+        .glitch {
+            position: relative;
+        }
+
+        .glitch::before,
+        .glitch::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+        }
+
+        .glitch::before {
+            left: 2px;
+            text-shadow: -2px 0 var(--fuchsia);
+            clip: rect(44px, 450px, 56px, 0);
+            animation: glitch-anim 5s infinite linear alternate-reverse;
+        }
+
+        .glitch::after {
+            left: -2px;
+            text-shadow: -2px 0 var(--blue);
+            clip: rect(44px, 450px, 56px, 0);
+            animation: glitch-anim2 5s infinite linear alternate-reverse;
+        }
+
+        @keyframes glitch-anim {
+            0% { clip: rect(31px, 9999px, 94px, 0); }
+            20% { clip: rect(62px, 9999px, 42px, 0); }
+            40% { clip: rect(16px, 9999px, 78px, 0); }
+            60% { clip: rect(43px, 9999px, 11px, 0); }
+            80% { clip: rect(93px, 9999px, 54px, 0); }
+            100% { clip: rect(2px, 9999px, 82px, 0); }
+        }
+
+        @keyframes glitch-anim2 {
+            0% { clip: rect(65px, 9999px, 100px, 0); }
+            20% { clip: rect(12px, 9999px, 58px, 0); }
+            40% { clip: rect(84px, 9999px, 23px, 0); }
+            60% { clip: rect(3px, 9999px, 90px, 0); }
+            80% { clip: rect(47px, 9999px, 15px, 0); }
+            100% { clip: rect(72px, 9999px, 44px, 0); }
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            padding-bottom: 60px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--cyan);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px var(--cyan);
+            border-color: var(--fuchsia);
+        }
+
+        .thumbnail-wrapper {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%;
+            overflow: hidden;
+            border-bottom: 1px solid var(--cyan);
+        }
+
+        .thumbnail-wrapper img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.8) contrast(1.2);
+        }
+
+        .card-content {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: var(--yellow);
+            line-height: 1.4;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: #ccc;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .download-btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background: transparent;
+            border: 1px solid var(--fuchsia);
+            color: var(--fuchsia);
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: bold;
+            letter-spacing: 2px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .download-btn:hover {
+            background: var(--fuchsia);
+            color: #fff;
+            box-shadow: 0 0 15px var(--fuchsia);
+        }
+
+        footer {
+            padding: 40px 0;
+            text-align: center;
+            border-top: 1px solid rgba(0, 255, 255, 0.2);
+            color: #666;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="crt-overlay"></div>
+    <div class="scanlines"></div>
+    
+    <header>
+        <div class="container">
+            <h1 class="glitch" data-text="TUMUGI ROOM DATA HUB">TUMUGI ROOM DATA HUB</h1>
+            <p class="subtitle">Supplemental Documents & Resources</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="video-grid" class="video-grid"></section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 つむぎ部屋 | Cyberpunk Interface v1.0.4</p>
+        </div>
+    </footer>
+
+    <script>
+        const videoData = [
+            {
+                title: "欧州の福祉崩壊！日本が直面する財政危機の回避術について紹介します！",
+                thumbnail: "https://img.youtube.com/vi/lZFlSyWsPdA/maxresdefault.jpg",
+                description: "欧州諸国の経済状況を参考に、日本が直面する可能性のある未来と具体的な回避策について深掘りします。",
+                downloadUrl: "#"
+            },
+            {
+                title: "年収1500万でもカツカツ！2026年ＮＹのリアルな家計実態",
+                thumbnail: "https://img.youtube.com/vi/am_0WoQU7bI/maxresdefault.jpg",
+                description: "過酷な物価高に見舞われるニューヨークの最新生活実態と、高所得層でも避けられない家計の苦境をレポート。",
+                downloadUrl: "#"
+            },
+            {
+                title: "【超大増税時代】これまでの投資の常識は変わります！今からこれで対策をして下さい！",
+                thumbnail: "https://img.youtube.com/vi/iBIW0DRxYtY/maxresdefault.jpg",
+                description: "迫りくる増税時代に向けた新しい投資ポートフォリオの考え方と、個人が今すぐ始めるべき防衛策を解説。",
+                downloadUrl: "#"
+            },
+            {
+                title: "フォートノックス 金の在庫はゼロ？米ドル崩壊とゴールド新時代の衝撃の真実",
+                thumbnail: "https://img.youtube.com/vi/B8WGcRzL-qU/maxresdefault.jpg",
+                description: "金準備を巡る裏側とドルの信認、そして資産防衛におけるゴールドの真の価値について衝撃の事実に迫ります。",
+                downloadUrl: "#"
+            },
+            {
+                title: "【2026年の予言】日本が「豊かな国」から「足りない国」へ…物価高の正体とバフェットが日本株を買う理由",
+                thumbnail: "https://img.youtube.com/vi/b54yuwrgI1c/maxresdefault.jpg",
+                description: "日本経済の構造的変化と、世界的投資家が日本市場を高く評価する背景、そして私たちが備えるべき未来像。",
+                downloadUrl: "#"
+            }
+        ];
+
+        function createVideoCard(video) {
+            const card = document.createElement('article');
+            card.className = 'card';
+            card.innerHTML = `
+                <div class="thumbnail-wrapper">
+                    <img src="${video.thumbnail}" alt="${video.title}">
+                </div>
+                <div class="card-content">
+                    <h3>${video.title}</h3>
+                    <p>${video.description}</p>
+                    <a href="${video.downloadUrl}" class="download-btn">DOWNLOAD DATA</a>
+                </div>
+            `;
+            return card;
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const grid = document.getElementById('video-grid');
+            videoData.forEach(video => {
+                grid.appendChild(createVideoCard(video));
+            });
+        });
+    </script>
+</body>
+</html>
