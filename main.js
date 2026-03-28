@@ -1,33 +1,10 @@
 const videoData = [
     {
-        title: "欧州の福祉崩壊！日本が直面する財政危機の回避術について紹介します！",
-        thumbnail: "https://img.youtube.com/vi/lZFlSyWsPdA/maxresdefault.jpg",
-        description: "欧州諸国の経済状況を参考に、日本が直面する可能性のある未来と具体的な回避策について深掘りします。",
-        downloadUrl: "#"
-    },
-    {
-        title: "年収1500万でもカツカツ！2026年ＮＹのリアルな家計実態",
-        thumbnail: "https://img.youtube.com/vi/am_0WoQU7bI/maxresdefault.jpg",
-        description: "過酷な物価高に見舞われるニューヨークの最新生活実態と、高所得層でも避けられない家計の苦境をレポート。",
-        downloadUrl: "#"
-    },
-    {
-        title: "【超大増税時代】これまでの投資の常識は変わります！今からこれで対策をして下さい！",
-        thumbnail: "https://img.youtube.com/vi/iBIW0DRxYtY/maxresdefault.jpg",
-        description: "迫りくる増税時代に向けた新しい投資ポートフォリオの考え方と、個人が今すぐ始めるべき防衛策を解説。",
-        downloadUrl: "#"
-    },
-    {
-        title: "フォートノックス 金の在庫はゼロ？米ドル崩壊とゴールド新時代の衝撃の真実",
-        thumbnail: "https://img.youtube.com/vi/B8WGcRzL-qU/maxresdefault.jpg",
-        description: "金準備を巡る裏側とドルの信認、そして資産防衛におけるゴールドの真の価値について衝撃の事実に迫ります。",
-        downloadUrl: "#"
-    },
-    {
-        title: "【2026年の予言】日本が「豊かな国」から「足りない国」へ…物価高の正体とバフェットが日本株を買う理由",
-        thumbnail: "https://img.youtube.com/vi/b54yuwrgI1c/maxresdefault.jpg",
-        description: "日本経済の構造的変化と、世界的投資家が日本市場を高く評価する背景、そして私たちが備えるべき未来像。",
-        downloadUrl: "#"
+        id: "_emCx5X1bdI",
+        title: "【考察総集編】若者の借金危機!?それが今後どのような影響を与えるのか解説します！",
+        thumbnail: "https://img.youtube.com/vi/_emCx5X1bdI/maxresdefault.jpg",
+        description: "3/23～3/30まで過去動画で公開されなかったもの＋総集編を公開します！【考察総集編第2弾】若者の借金危機!?それが今後どのような影響を与えるのか考察しました",
+        downloadUrl: "./downloads/_emCx5X1bdI.pdf"
     }
 ];
 
@@ -35,14 +12,24 @@ function createVideoCard(video) {
     const card = document.createElement('article');
     card.className = 'card';
     
+    // Fallback: If downloadUrl is not provided or just a placeholder, 
+    // we can make it point to the YouTube video or disable it.
+    const downloadLabel = video.downloadUrl && video.downloadUrl !== "#" ? "DOWNLOAD DATA" : "COMING SOON";
+    const downloadClass = video.downloadUrl && video.downloadUrl !== "#" ? "download-btn" : "download-btn disabled";
+
     card.innerHTML = `
         <div class="thumbnail-wrapper">
-            <img src="${video.thumbnail}" alt="${video.title}" loading="lazy">
+            <a href="https://www.youtube.com/watch?v=${video.id}" target="_blank">
+                <img src="${video.thumbnail}" alt="${video.title}" loading="lazy">
+                <div class="play-overlay"><span class="play-icon">▶</span></div>
+            </a>
         </div>
         <div class="card-content">
             <h3>${video.title}</h3>
             <p>${video.description}</p>
-            <a href="${video.downloadUrl}" class="download-btn">DOWNLOAD DATA</a>
+            <div class="btn-group">
+                <a href="${video.downloadUrl}" class="${downloadClass}" ${video.downloadUrl === "#" ? "onclick='return false;'" : ""}>${downloadLabel}</a>
+            </div>
         </div>
     `;
     
@@ -52,9 +39,12 @@ function createVideoCard(video) {
 document.addEventListener('DOMContentLoaded', () => {
     const grid = document.getElementById('video-grid');
     
-    videoData.forEach((video, index) => {
+    if (videoData.length === 0) {
+        grid.innerHTML = '<p class="no-data">動画データを読み込んでいます...</p>';
+    }
+
+    videoData.forEach((video) => {
         const card = createVideoCard(video);
-        // Add a slight delay for staggered entrance effect if desired
         grid.appendChild(card);
     });
 
