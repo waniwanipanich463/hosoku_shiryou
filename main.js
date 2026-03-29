@@ -1,12 +1,4 @@
-const videoData = [
-    {
-        id: "_emCx5X1bdI",
-        title: "【考察総集編】若者の借金危機!?それが今後どのような影響を与えるのか解説します！",
-        thumbnail: "https://img.youtube.com/vi/_emCx5X1bdI/maxresdefault.jpg",
-        description: "3/23～3/30まで過去動画で公開されなかったもの＋総集編を公開します！【考察総集編第2弾】若者の借金危機!?それが今後どのような影響を与えるのか考察しました",
-        downloadUrl: "./downloads/_emCx5X1bdI.pdf"
-    }
-];
+const videoData = [];
 
 function createVideoCard(video) {
     const card = document.createElement('article');
