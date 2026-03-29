@@ -124,6 +124,7 @@ async function sync() {
         
     } catch (error) {
         console.error('Error syncing:', error);
+        process.exit(1);
     }
 }
 
