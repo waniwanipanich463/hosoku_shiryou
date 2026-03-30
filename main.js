@@ -1,4 +1,12 @@
-const videoData = [];
+const videoData = [
+    {
+        "id": "O4I213UZYQY",
+        "title": "【考察総集編】医療費14,000ドルでも長生きできないアメリカ!?米国医療システム破綻で国民に与える影響を考察します！",
+        "thumbnail": "https://img.youtube.com/vi/O4I213UZYQY/maxresdefault.jpg",
+        "description": "最新の動画内容についてはYouTubeでご確認ください。",
+        "downloadUrl": "./downloads/O4I213UZYQY.pdf"
+    }
+];
 
 function createVideoCard(video) {
     const card = document.createElement('article');
