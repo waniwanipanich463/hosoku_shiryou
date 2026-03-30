@@ -1,10 +1,17 @@
 const videoData = [
     {
-        "id": "_emCx5X1bdI",
-        "title": "【考察総集編】若者の借金危機!?それが今後どのような影響を与えるのか解説します！",
-        "thumbnail": "https://img.youtube.com/vi/_emCx5X1bdI/maxresdefault.jpg",
-        "description": "3/23～3/30まで過去動画で公開されなかったもの＋総集編を公開します！【考察総集編第2弾】若者の借金危機!?それが今後どのような影響を与えるのか考察しました",
-        "downloadUrl": "./downloads/assets_100m.pdf"
+        "id": "cnTFi9G64BM",
+        "title": "【考察総集編】アメリカで何が起きた!?スタバ閉店の連鎖で米国経済完全終了",
+        "thumbnail": "https://img.youtube.com/vi/cnTFi9G64BM/maxresdefault.jpg",
+        "description": "最新の動画内容についてはYouTubeでご確認ください。",
+        "downloadUrl": "./downloads/cnTFi9G64BM.pdf"
+    },
+    {
+        "id": "O4I213UZYQY",
+        "title": "【考察総集編】医療費14,000ドルでも長生きできないアメリカ!?米国医療システム破綻で国民に与える影響を考察します！",
+        "thumbnail": "https://img.youtube.com/vi/O4I213UZYQY/maxresdefault.jpg",
+        "description": "最新の動画内容についてはYouTubeでご確認ください。",
+        "downloadUrl": "./downloads/O4I213UZYQY.pdf"
     }
 ];
 
@@ -12,10 +19,10 @@ function createVideoCard(video) {
     const card = document.createElement('article');
     card.className = 'card';
     
-    // 18時制限のチェック (検証用に一時的にtrue)
+    // 18時制限のチェック
     const now = new Date();
     const currentHour = now.getHours();
-    const isAfter18 = true;
+    const isAfter18 = currentHour >= 18;
 
     let downloadLabel = "COMING SOON";
     let downloadClass = "download-btn disabled";
@@ -45,7 +52,7 @@ function createVideoCard(video) {
             <div class="btn-group">
                 <a href="${isClickable ? video.downloadUrl : '#'}" 
                    class="${downloadClass}" 
-                   ${!isClickable ? "onclick='return false;'" : 'download="assets_100m.pdf"'}>
+                   ${!isClickable ? "onclick='return false;'" : "download"}>
                    ${downloadLabel}
                 </a>
             </div>
