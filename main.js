@@ -1,10 +1,10 @@
 const videoData = [
     {
-        "id": "O4I213UZYQY",
-        "title": "【考察総集編】医療費14,000ドルでも長生きできないアメリカ!?米国医療システム破綻で国民に与える影響を考察します！",
-        "thumbnail": "https://img.youtube.com/vi/O4I213UZYQY/maxresdefault.jpg",
-        "description": "最新の動画内容についてはYouTubeでご確認ください。",
-        "downloadUrl": "./downloads/O4I213UZYQY.pdf"
+        "id": "_emCx5X1bdI",
+        "title": "【考察総集編】若者の借金危機!?それが今後どのような影響を与えるのか解説します！",
+        "thumbnail": "https://img.youtube.com/vi/_emCx5X1bdI/maxresdefault.jpg",
+        "description": "3/23～3/30まで過去動画で公開されなかったもの＋総集編を公開します！【考察総集編第2弾】若者の借金危機!?それが今後どのような影響を与えるのか考察しました",
+        "downloadUrl": "./downloads/資産1億円の常識は崩壊.pdf"
     }
 ];
 
@@ -12,10 +12,10 @@ function createVideoCard(video) {
     const card = document.createElement('article');
     card.className = 'card';
     
-    // 18時制限のチェック
+    // 18時制限のチェック (検証用に一時的にtrue)
     const now = new Date();
     const currentHour = now.getHours();
-    const isAfter18 = currentHour >= 18;
+    const isAfter18 = true;
 
     let downloadLabel = "COMING SOON";
     let downloadClass = "download-btn disabled";
