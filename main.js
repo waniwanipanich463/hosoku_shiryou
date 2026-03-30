@@ -45,7 +45,7 @@ function createVideoCard(video) {
             <div class="btn-group">
                 <a href="${isClickable ? video.downloadUrl : '#'}" 
                    class="${downloadClass}" 
-                   ${!isClickable ? "onclick='return false;'" : 'download="資産1億円の常識は崩壊.pdf"'}>
+                   ${!isClickable ? "onclick='return false;'" : 'download="assets_100m.pdf"'}>
                    ${downloadLabel}
                 </a>
             </div>
