@@ -12,10 +12,25 @@ function createVideoCard(video) {
     const card = document.createElement('article');
     card.className = 'card';
     
-    // Fallback: If downloadUrl is not provided or just a placeholder, 
-    // we can make it point to the YouTube video or disable it.
-    const downloadLabel = video.downloadUrl && video.downloadUrl !== "#" ? "DOWNLOAD DATA" : "COMING SOON";
-    const downloadClass = video.downloadUrl && video.downloadUrl !== "#" ? "download-btn" : "download-btn disabled";
+    // 18時制限のチェック
+    const now = new Date();
+    const currentHour = now.getHours();
+    const isAfter18 = currentHour >= 18;
+
+    let downloadLabel = "COMING SOON";
+    let downloadClass = "download-btn disabled";
+    let isClickable = false;
+
+    if (video.downloadUrl && video.downloadUrl !== "#") {
+        if (isAfter18) {
+            downloadLabel = "DOWNLOAD DATA";
+            downloadClass = "download-btn";
+            isClickable = true;
+        } else {
+            downloadLabel = "18:00 公開";
+            downloadClass = "download-btn disabled delay";
+        }
+    }
 
     card.innerHTML = `
         <div class="thumbnail-wrapper">
@@ -28,7 +43,11 @@ function createVideoCard(video) {
             <h3>${video.title}</h3>
             <p>${video.description}</p>
             <div class="btn-group">
-                <a href="${video.downloadUrl}" class="${downloadClass}" ${video.downloadUrl === "#" ? "onclick='return false;'" : ""}>${downloadLabel}</a>
+                <a href="${isClickable ? video.downloadUrl : '#'}" 
+                   class="${downloadClass}" 
+                   ${!isClickable ? "onclick='return false;'" : "download"}>
+                   ${downloadLabel}
+                </a>
             </div>
         </div>
     `;

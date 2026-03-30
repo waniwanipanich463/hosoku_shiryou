@@ -251,6 +251,13 @@ h1 {
     pointer-events: none;
 }
 
+.download-btn.disabled.delay {
+    border-color: var(--yellow);
+    color: var(--yellow);
+    opacity: 0.6;
+    text-shadow: 0 0 5px var(--yellow);
+}
+
 .download-btn.disabled::after {
     display: none;
 }
