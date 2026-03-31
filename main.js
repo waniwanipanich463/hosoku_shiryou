@@ -1,40 +1,29 @@
-const videoData = [
-    {
-        "id": "cnTFi9G64BM",
-        "title": "【考察総集編】アメリカで何が起きた!?スタバ閉店の連鎖で米国経済完全終了",
-        "thumbnail": "https://img.youtube.com/vi/cnTFi9G64BM/maxresdefault.jpg",
-        "description": "最新の動画内容についてはYouTubeでご確認ください。",
-        "downloadUrl": "./downloads/cnTFi9G64BM.pdf"
-    },
-    {
-        "id": "O4I213UZYQY",
-        "title": "【考察総集編】医療費14,000ドルでも長生きできないアメリカ!?米国医療システム破綻で国民に与える影響を考察します！",
-        "thumbnail": "https://img.youtube.com/vi/O4I213UZYQY/maxresdefault.jpg",
-        "description": "最新の動画内容についてはYouTubeでご確認ください。",
-        "downloadUrl": "./downloads/O4I213UZYQY.pdf"
-    }
-];
+const videoData = [];
 
 function createVideoCard(video) {
     const card = document.createElement('article');
     card.className = 'card';
     
-    // 18時制限のチェック (【検証用】一時的に常にtrueにしてデプロイします)
+    // 18時制限のチェック
     const now = new Date();
-    const currentHour = now.getHours();
-    const isAfter18 = true; 
+    
+    // 公開日の取得（YYYY/MM/DD形式を想定）
+    const pubDateParts = video.publishedDate.split('/');
+    const releaseDate = new Date(pubDateParts[0], pubDateParts[1] - 1, pubDateParts[2], 18, 0, 0);
+    
+    const isReleased = now >= releaseDate; 
 
     let downloadLabel = "COMING SOON";
     let downloadClass = "download-btn disabled";
     let isClickable = false;
 
     if (video.downloadUrl && video.downloadUrl !== "#") {
-        if (isAfter18) {
+        if (isReleased) {
             downloadLabel = "DOWNLOAD DATA";
             downloadClass = "download-btn";
             isClickable = true;
         } else {
-            downloadLabel = "18:00 公開";
+            downloadLabel = "本日 18:00 公開";
             downloadClass = "download-btn disabled delay";
         }
     }

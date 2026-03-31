@@ -7,7 +7,7 @@ const CHANNEL_ID = 'UC2VfIGmIV_2FSB7r0fIkbKg';
 const RSS_URL = `https://www.youtube.com/feeds/videos.xml?channel_id=${CHANNEL_ID}`;
 const SPREADSHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/1YebegiKIdWJ8_t_P4B47uDQImyufWUZlFl19w3Xc_VU/export?format=csv&gid=0';
 const TARGET_FILE = path.join(process.cwd(), 'main.js');
-const START_DATE = new Date('2026-03-29');
+const START_DATE = new Date('2026-04-01');
 
 // 汎用データ取得関数
 function fetchData(url) {
@@ -54,7 +54,7 @@ function parseYouTubeRSS(xml) {
 // スプレッドシート CSV の解析
 function parseSpreadsheetCSV(csv) {
     const lines = csv.split(/\r?\n/);
-    const materialMap = new Map(); // Title -> DownloadURL
+    const materialMap = new Map(); // Title -> { downloadUrl, publishedDate }
     
     // ヘッダーを飛ばして2行目から解析
     for (let i = 1; i < lines.length; i++) {
@@ -62,14 +62,17 @@ function parseSpreadsheetCSV(csv) {
         if (!line) continue;
         
         // CSVのパース（シンプル版：カンマ区切り）
-        // 実際にはクォート対応が必要な場合があるため、簡易的な正規表現を使用
         const columns = line.split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/);
         
+        const publishedDateStr = columns[1]?.replace(/^"|"$/g, '').trim(); // B列: 公開日 (YYYY/MM/DD)
         const title = columns[3]?.replace(/^"|"$/g, '').trim(); // D列: YouTubeタイトル
         const downloadUrl = columns[5]?.replace(/^"|"$/g, '').trim(); // F列: ダウンロードURL
         
         if (title && downloadUrl && downloadUrl.startsWith('http')) {
-            materialMap.set(title, downloadUrl);
+            materialMap.set(title, {
+                downloadUrl,
+                publishedDate: publishedDateStr
+            });
         }
     }
     return materialMap;
@@ -90,16 +93,19 @@ async function sync() {
         console.log(`Spreadsheet: Found ${materialMap.size} material links.`);
 
         const finalVideos = youtubeVideos.map(video => {
-            // 1. スプレッドシートのURLを優先
-            let downloadUrl = materialMap.get(video.title);
+            // 1. スプレッドシートの情報を優先
+            const sheetInfo = materialMap.get(video.title);
+            let downloadUrl = sheetInfo?.downloadUrl;
+            let publishedDate = sheetInfo?.publishedDate;
             
-            // 2. スプレッドシートにない場合、ローカルの `downloads/` フォルダをチェック（期待されるパスをセット）
+            // 2. スプレッドシートにない場合、YouTubeの公開日を使用し、URLは空に
+            if (!publishedDate) {
+                const d = new Date(video.published);
+                publishedDate = `${d.getFullYear()}/${String(d.getMonth() + 1).padStart(2, '0')}/${String(d.getDate()).padStart(2, '0')}`;
+            }
+
             if (!downloadUrl) {
-                const localFilePath = `./downloads/${video.id}.pdf`;
-                // 注: クライアントサイドでの存在確認はブラウザ側で行われるか、
-                // あるいはここで存在を確認できるが、Viteのビルド後のパスを考慮して
-                // デフォルト値をセットしておく。
-                downloadUrl = localFilePath;
+                downloadUrl = "#";
             }
 
             return {
@@ -107,14 +113,12 @@ async function sync() {
                 title: video.title,
                 thumbnail: video.thumbnail,
                 description: video.description,
-                downloadUrl: downloadUrl // main.js側のロジックで "#" などの扱いは制御
+                downloadUrl: downloadUrl,
+                publishedDate: publishedDate
             };
         });
 
-        const videoDataString = `const videoData = ${JSON.stringify(finalVideos.sort((a, b) => b.published - a.published), (key, value) => {
-            if (key === 'published') return undefined;
-            return value;
-        }, 4)};`;
+        const videoDataString = `const videoData = ${JSON.stringify(finalVideos.sort((a, b) => new Date(b.publishedDate) - new Date(a.publishedDate)), null, 4)};`;
 
         const content = fs.readFileSync(TARGET_FILE, 'utf8');
         const updatedContent = content.replace(/const videoData = \[[\s\S]*?\];/, videoDataString);
