@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const grid = document.getElementById('video-grid');
     
     if (videoData.length === 0) {
-        grid.innerHTML = '<p class="no-data">動画データを読み込んでいます...</p>';
+        grid.innerHTML = '<p class="no-data">COMING SOON...</p>';
     }
 
     videoData.forEach((video) => {
