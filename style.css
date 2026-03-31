@@ -96,6 +96,19 @@ header {
     pointer-events: none;
 }
 
+.mobile-only {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .desktop-only {
+        display: none;
+    }
+    .mobile-only {
+        display: block;
+    }
+}
+
 .header-content {
     position: relative;
     z-index: 1;
