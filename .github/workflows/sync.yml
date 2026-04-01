@@ -2,7 +2,7 @@ name: Sync YouTube Videos
 
 on:
   schedule:
-    - cron: '0 0 * * *' # 毎日日本時間午前9時（UTC 0:00）に実行
+    - cron: '0 * * * *' # 毎時実行（18:00公開の動画を確実に拾うため）
   workflow_dispatch: # 手動実行も可能
 
 jobs:

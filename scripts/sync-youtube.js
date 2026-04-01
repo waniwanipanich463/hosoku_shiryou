@@ -93,19 +93,29 @@ async function sync() {
         console.log(`Spreadsheet: Found ${materialMap.size} material links.`);
 
         const finalVideos = youtubeVideos.map(video => {
-            // 1. スプレッドシートの情報を優先
-            const sheetInfo = materialMap.get(video.title);
-            let downloadUrl = sheetInfo?.downloadUrl;
-            let publishedDate = sheetInfo?.publishedDate;
+            const d = new Date(video.published);
+            const pubDateStr = `${d.getFullYear()}/${String(d.getMonth() + 1).padStart(2, '0')}/${String(d.getDate()).padStart(2, '0')}`;
+
+            // 1. タイトルでのマッチング試行
+            let sheetInfo = materialMap.get(video.title);
             
-            // 2. スプレッドシートにない場合、YouTubeの公開日を使用し、URLは空に
-            if (!publishedDate) {
-                const d = new Date(video.published);
-                publishedDate = `${d.getFullYear()}/${String(d.getMonth() + 1).padStart(2, '0')}/${String(d.getDate()).padStart(2, '0')}`;
+            // 2. タイトルで一致しない場合、日付でのマッチングを試行（フォールバック）
+            if (!sheetInfo) {
+                for (const [title, info] of materialMap.entries()) {
+                    if (info.publishedDate === pubDateStr) {
+                        console.log(`Matching: Title mismatch but date matched!`);
+                        console.log(`  YouTube: "${video.title}"`);
+                        console.log(`  Sheet:   "${title}" (Date: ${pubDateStr})`);
+                        sheetInfo = info;
+                        break;
+                    }
+                }
             }
 
-            if (!downloadUrl) {
-                downloadUrl = "#";
+            if (sheetInfo) {
+                console.log(`Successfully matched potential material for: ${video.title}`);
+            } else {
+                console.log(`No material found for: ${video.title} (Date: ${pubDateStr})`);
             }
 
             return {
@@ -113,8 +123,8 @@ async function sync() {
                 title: video.title,
                 thumbnail: video.thumbnail,
                 description: video.description,
-                downloadUrl: downloadUrl,
-                publishedDate: publishedDate
+                downloadUrl: sheetInfo?.downloadUrl || "#",
+                publishedDate: sheetInfo?.publishedDate || pubDateStr
             };
         });
 
