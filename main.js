@@ -12,7 +12,7 @@ const videoData = [
         "title": "日本低迷の今後はこうなる!?インフレと円安でどう生き抜くか紹介します！",
         "thumbnail": "https://img.youtube.com/vi/QqAHinC-VAE/maxresdefault.jpg",
         "description": "最新の動画内容についてはYouTubeでご確認ください。",
-        "downloadUrl": "#",
+        "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:791e9b37-017c-47bc-96bc-b5b00606014d",
         "publishedDate": "2026/04/01"
     }
 ];
