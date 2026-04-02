@@ -21,28 +21,14 @@ function createVideoCard(video) {
     const card = document.createElement('article');
     card.className = 'card';
     
-    // 18時制限のチェック
-    const now = new Date();
-    
-    // 公開日の取得（YYYY/MM/DD形式を想定）
-    const pubDateParts = video.publishedDate.split('/');
-    const releaseDate = new Date(pubDateParts[0], pubDateParts[1] - 1, pubDateParts[2], 18, 0, 0);
-    
-    const isReleased = now >= releaseDate; 
-
     let downloadLabel = "COMING SOON";
     let downloadClass = "download-btn disabled";
     let isClickable = false;
 
     if (video.downloadUrl && video.downloadUrl !== "#") {
-        if (isReleased) {
-            downloadLabel = "DOWNLOAD DATA";
-            downloadClass = "download-btn";
-            isClickable = true;
-        } else {
-            downloadLabel = "本日 18:00 公開";
-            downloadClass = "download-btn disabled delay";
-        }
+        downloadLabel = "DOWNLOAD DATA";
+        downloadClass = "download-btn";
+        isClickable = true;
     }
 
     card.innerHTML = `
