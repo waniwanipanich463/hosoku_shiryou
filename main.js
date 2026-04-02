@@ -1,13 +1,4 @@
-const videoData = [
-    {
-        "id": "QqAHinC-VAE",
-        "title": "日本低迷の今後はこうなる!?インフレと円安でどう生き抜くか紹介します！",
-        "thumbnail": "https://img.youtube.com/vi/QqAHinC-VAE/maxresdefault.jpg",
-        "description": "最新の動画内容についてはYouTubeでご確認ください。",
-        "downloadUrl": "#",
-        "publishedDate": "2026/04/01"
-    }
-];
+const videoData = [];
 
 function createVideoCard(video) {
     const card = document.createElement('article');
