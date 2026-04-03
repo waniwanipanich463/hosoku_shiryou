@@ -29,15 +29,10 @@ function createVideoCard(video) {
     const card = document.createElement('article');
     card.className = 'card';
     
-    let downloadLabel = "COMING SOON";
-    let downloadClass = "download-btn disabled";
-    let isClickable = false;
-
-    if (video.downloadUrl && video.downloadUrl !== "#") {
-        downloadLabel = "DOWNLOAD DATA";
-        downloadClass = "download-btn";
-        isClickable = true;
-    }
+    const label = "DOWNLOAD DATA";
+    const btnClass = "download-btn";
+    const fallbackUrl = "https://tumugi-lp.vercel.app";
+    const finalUrl = (video.downloadUrl && video.downloadUrl !== "#") ? video.downloadUrl : fallbackUrl;
 
     card.innerHTML = `
         <div class="thumbnail-wrapper">
@@ -50,10 +45,11 @@ function createVideoCard(video) {
             <h3>${video.title}</h3>
             <p>${video.description}</p>
             <div class="btn-group">
-                <a href="${isClickable ? video.downloadUrl : '#'}" 
-                   class="${downloadClass}" 
-                   ${!isClickable ? "onclick='return false;'" : "download"}>
-                   ${downloadLabel}
+                <a href="${finalUrl}" 
+                   class="${btnClass}" 
+                   target="_blank"
+                   rel="noopener noreferrer">
+                   ${label}
                 </a>
             </div>
         </div>
