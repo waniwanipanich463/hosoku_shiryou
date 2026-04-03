@@ -4,7 +4,7 @@ const videoData = [
         "title": "金価格高騰の裏側!?金が高いのではなく日本円の価値が崩壊している実態について紹介します！",
         "thumbnail": "https://img.youtube.com/vi/0wIXfCqqQLA/maxresdefault.jpg",
         "description": "最新の動画内容についてはYouTubeでご確認ください。",
-        "downloadUrl": "#",
+        "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:e2e864c8-8f3c-432f-8695-2537ee19cfbe",
         "publishedDate": "2026/04/03"
     },
     {
@@ -12,7 +12,7 @@ const videoData = [
         "title": "インフレと円安!?更に社会保険料増により今後の日本でどう生き残るか紹介します！",
         "thumbnail": "https://img.youtube.com/vi/5oCl_wADe7E/maxresdefault.jpg",
         "description": "最新の動画内容についてはYouTubeでご確認ください。",
-        "downloadUrl": "#",
+        "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:991ee9b7-7566-418d-86ce-6ae6bd63f206",
         "publishedDate": "2026/04/02"
     },
     {
@@ -20,7 +20,7 @@ const videoData = [
         "title": "日本低迷の今後はこうなる!?インフレと円安でどう生き抜くか紹介します！",
         "thumbnail": "https://img.youtube.com/vi/QqAHinC-VAE/maxresdefault.jpg",
         "description": "最新の動画内容についてはYouTubeでご確認ください。",
-        "downloadUrl": "#",
+        "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:791e9b37-017c-47bc-96bc-b5b00606014d",
         "publishedDate": "2026/04/01"
     }
 ];
