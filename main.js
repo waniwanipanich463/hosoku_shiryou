@@ -9,7 +9,7 @@ const videoData = [
     },
     {
         "id": "5oCl_wADe7E",
-        "title": "イン���レと円安!?更に社会保険料増により今後の日本でどう生き残るか紹介します！",
+        "title": "インフレと円安!?更に社会保険料増により今後の日本でどう生き残るか紹介します！",
         "thumbnail": "https://img.youtube.com/vi/5oCl_wADe7E/maxresdefault.jpg",
         "description": "最新の動画内容についてはYouTubeでご確認ください。",
         "downloadUrl": "#",
