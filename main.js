@@ -1,21 +1,4 @@
-const videoData = [
-    {
-        "id": "5oCl_wADe7E",
-        "title": "インフレと円安!?更に社会保険料増により今後の日本でどう生き残るか紹介します！",
-        "thumbnail": "https://img.youtube.com/vi/5oCl_wADe7E/maxresdefault.jpg",
-        "description": "最新の動画内容についてはYouTubeでご確認ください。",
-        "downloadUrl": "#",
-        "publishedDate": "2026/04/02"
-    },
-    {
-        "id": "QqAHinC-VAE",
-        "title": "日本低迷の��後はこうなる!?インフレと円安でどう生き抜くか紹介します！",
-        "thumbnail": "https://img.youtube.com/vi/QqAHinC-VAE/maxresdefault.jpg",
-        "description": "最新の動画内容についてはYouTubeでご確認ください。",
-        "downloadUrl": "#",
-        "publishedDate": "2026/04/01"
-    }
-];
+const videoData = [];
 
 function createVideoCard(video) {
     const card = document.createElement('article');
