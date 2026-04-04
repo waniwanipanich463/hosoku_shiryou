@@ -1,5 +1,13 @@
 const videoData = [
     {
+        "id": "TmzSvhCD-gQ",
+        "title": "日本の不動産市場に大打撃!?中国人富裕層が日本の不動産を大量売却している裏側について紹介！",
+        "thumbnail": "https://img.youtube.com/vi/TmzSvhCD-gQ/maxresdefault.jpg",
+        "description": "最新の動画内容についてはYouTubeでご確認ください。",
+        "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:09f2a899-98e1-4b1f-979c-7bf69b9d42a8",
+        "publishedDate": "2026/04/04"
+    },
+    {
         "id": "0wIXfCqqQLA",
         "title": "金価格高騰の裏側!?金が高いのではなく日本円の価値が崩壊している実態について紹介します！",
         "thumbnail": "https://img.youtube.com/vi/0wIXfCqqQLA/maxresdefault.jpg",
