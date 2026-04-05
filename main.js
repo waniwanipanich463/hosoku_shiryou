@@ -1,5 +1,13 @@
 const videoData = [
     {
+        "id": "hoPVcuHzmrc",
+        "title": "緊迫した中東戦争!?世界的な供給ショックとインフレの正体について紹介します！",
+        "thumbnail": "https://img.youtube.com/vi/hoPVcuHzmrc/maxresdefault.jpg",
+        "description": "最新の動画内容についてはYouTubeでご確認ください。",
+        "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:c071d4c1-283d-402b-94ee-271af9916cdc",
+        "publishedDate": "2026/04/05"
+    },
+    {
         "id": "TmzSvhCD-gQ",
         "title": "日本の不動産市場に大打撃!?中国人富裕層が日本の不動産を大量売却している裏側について紹介！",
         "thumbnail": "https://img.youtube.com/vi/TmzSvhCD-gQ/maxresdefault.jpg",
