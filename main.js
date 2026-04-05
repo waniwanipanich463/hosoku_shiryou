@@ -76,15 +76,36 @@ function createVideoCard(video) {
 
 document.addEventListener('DOMContentLoaded', () => {
     const grid = document.getElementById('video-grid');
+    const searchInput = document.getElementById('search-input');
     
-    if (videoData.length === 0) {
-        grid.innerHTML = '<p class="no-data">COMING SOON...</p>';
+    function renderVideos(filterTerm = '') {
+        grid.innerHTML = '';
+        const filteredData = videoData.filter(video => 
+            video.title.toLowerCase().includes(filterTerm.toLowerCase())
+        );
+
+        if (filteredData.length === 0) {
+            grid.innerHTML = `<p class="no-data">NO RESULTS FOUND FOR "${filterTerm}"</p>`;
+            return;
+        }
+
+        filteredData.forEach((video) => {
+            const card = createVideoCard(video);
+            grid.appendChild(card);
+        });
     }
 
-    videoData.forEach((video) => {
-        const card = createVideoCard(video);
-        grid.appendChild(card);
-    });
+    if (videoData.length === 0) {
+        grid.innerHTML = '<p class="no-data">COMING SOON...</p>';
+    } else {
+        renderVideos();
+    }
+
+    if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+            renderVideos(e.target.value);
+        });
+    }
 
     console.log('Cyberpunk Interface Initialized.');
 });
