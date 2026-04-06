@@ -1,5 +1,13 @@
 const videoData = [
     {
+        "id": "BgBz4hDXBNw",
+        "title": "2026年4月!?日米の株価上昇する理由について紹介します！",
+        "thumbnail": "https://img.youtube.com/vi/BgBz4hDXBNw/maxresdefault.jpg",
+        "description": "最新の動画内容についてはYouTubeでご確認ください。",
+        "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:cd333a79-a9bb-4474-9e0a-2061b8eec0dc",
+        "publishedDate": "2026/04/06"
+    },
+    {
         "id": "hoPVcuHzmrc",
         "title": "緊迫した中東戦争!?世界的な供給ショックとインフレの正体について紹介します！",
         "thumbnail": "https://img.youtube.com/vi/hoPVcuHzmrc/maxresdefault.jpg",
