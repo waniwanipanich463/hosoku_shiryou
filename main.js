@@ -1,5 +1,13 @@
 const videoData = [
     {
+        "id": "A6TEzPAZL3k",
+        "title": "通貨帝国アメリカの崩壊!?超大富豪達は●●をする理由を紹介します！",
+        "thumbnail": "https://img.youtube.com/vi/A6TEzPAZL3k/maxresdefault.jpg",
+        "description": "最新の動画内容についてはYouTubeでご確認ください。",
+        "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:4f47947a-8ffd-4efa-8132-a74406c8cdc1",
+        "publishedDate": "2026/04/07"
+    },
+    {
         "id": "BgBz4hDXBNw",
         "title": "2026年4月!?日米の株価上昇する理由について紹介します！",
         "thumbnail": "https://img.youtube.com/vi/BgBz4hDXBNw/maxresdefault.jpg",
