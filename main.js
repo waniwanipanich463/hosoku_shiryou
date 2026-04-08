@@ -1,5 +1,13 @@
 const videoData = [
     {
+        "id": "A5Qdq3CMtWc",
+        "title": "弱肉強食のディールの時代!?自由貿易の終焉と新たな戦場について紹介します！",
+        "thumbnail": "https://img.youtube.com/vi/A5Qdq3CMtWc/maxresdefault.jpg",
+        "description": "最新の動画内容についてはYouTubeでご確認ください。",
+        "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:3f3af979-75d3-433a-bd37-27cf18e7e1ab",
+        "publishedDate": "2026/04/08"
+    },
+    {
         "id": "A6TEzPAZL3k",
         "title": "通貨帝国アメリカの崩壊!?超大富豪達は●●をする理由を紹介します！",
         "thumbnail": "https://img.youtube.com/vi/A6TEzPAZL3k/maxresdefault.jpg",
