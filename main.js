@@ -1,5 +1,13 @@
 const videoData = [
     {
+        "id": "LzopubzzXjA",
+        "title": "二大巨頭の警鐘!?資産家の強烈な警告の裏にある真意について紹介します！",
+        "thumbnail": "https://img.youtube.com/vi/LzopubzzXjA/maxresdefault.jpg",
+        "description": "最新の動画内容についてはYouTubeでご確認ください。",
+        "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:fea19872-d01f-46a0-a5b3-d96d63159cf9",
+        "publishedDate": "2026/04/09"
+    },
+    {
         "id": "A5Qdq3CMtWc",
         "title": "弱肉強食のディールの時代!?自由貿易の終焉と新たな戦場について紹介します！",
         "thumbnail": "https://img.youtube.com/vi/A5Qdq3CMtWc/maxresdefault.jpg",
