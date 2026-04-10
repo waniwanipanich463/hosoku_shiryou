@@ -1,5 +1,13 @@
 const videoData = [
     {
+        "id": "QHgelc032j8",
+        "title": "アメリカと中国!?壮大な国家間競争の背景について紹介します！",
+        "thumbnail": "https://img.youtube.com/vi/QHgelc032j8/maxresdefault.jpg",
+        "description": "最新の動画内容についてはYouTubeでご確認ください。",
+        "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:2ecef62c-e6c7-49c3-be43-44201bfef3df",
+        "publishedDate": "2026/04/10"
+    },
+    {
         "id": "LzopubzzXjA",
         "title": "二大巨頭の警鐘!?資産家の強烈な警告の裏にある真意について紹介します！",
         "thumbnail": "https://img.youtube.com/vi/LzopubzzXjA/maxresdefault.jpg",
