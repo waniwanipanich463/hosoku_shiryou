@@ -25,7 +25,7 @@ const videoData = [
     },
     {
         "id": "LzopubzzXjA",
-        "title": "二大巨頭の警鐘!?資産家の強烈な警告の裏にある真意について紹介します！",
+        "title": "バフェット氏が残した警告とは!?資産運用をしてる人に知ってほしいことについてお話します！",
         "thumbnail": "https://img.youtube.com/vi/LzopubzzXjA/maxresdefault.jpg",
         "description": "最新の動画内容についてはYouTubeでご確認ください。",
         "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:fea19872-d01f-46a0-a5b3-d96d63159cf9",
