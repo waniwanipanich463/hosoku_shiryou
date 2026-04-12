@@ -1,5 +1,13 @@
 const videoData = [
     {
+        "id": "iu8m2SVaOf4",
+        "title": "【投資家必見】知らないと老後破綻する！？国に資産を奪われる残酷なお金のルール変更と資産を防衛するための対策について解説します！",
+        "thumbnail": "https://img.youtube.com/vi/iu8m2SVaOf4/maxresdefault.jpg",
+        "description": "最新の動画内容についてはYouTubeでご確認ください。",
+        "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:aa2b64fa-ce9d-4cbd-8930-617ce2312cd0",
+        "publishedDate": "2026/04/12"
+    },
+    {
         "id": "ZHR98tyI7mY",
         "title": "【衝撃】米軍撤退で日本は完全終了？日本が極秘に進める自立防衛網と40代以上の投資家が今すぐやるべき資産防衛術について解説します！",
         "thumbnail": "https://img.youtube.com/vi/ZHR98tyI7mY/maxresdefault.jpg",
