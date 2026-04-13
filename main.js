@@ -1,5 +1,13 @@
 const videoData = [
     {
+        "id": "0dTr8uwT5u4",
+        "title": "【2026年最新】メディアが隠す日本財政の真実。高市政権の「サナエノミクス」で経済はどう変わるのか？",
+        "thumbnail": "https://img.youtube.com/vi/0dTr8uwT5u4/maxresdefault.jpg",
+        "description": "最新の動画内容についてはYouTubeでご確認ください。",
+        "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:fbc1b7e6-c7a8-4192-81c4-19051825e2b5",
+        "publishedDate": "2026/04/13"
+    },
+    {
         "id": "iu8m2SVaOf4",
         "title": "【投資家必見】知らないと老後破綻する！？国に資産を奪われる残酷なお金のルール変更と資産を防衛するための対策について解説します！",
         "thumbnail": "https://img.youtube.com/vi/iu8m2SVaOf4/maxresdefault.jpg",
