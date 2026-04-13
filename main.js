@@ -17,7 +17,7 @@ const videoData = [
     },
     {
         "id": "ZHR98tyI7mY",
-        "title": "【衝撃】米軍撤退で日本は完全終了？日本が極秘に進める自立防衛網と40代以上の投資家が今すぐやるべき資産防衛術について解説します！",
+        "title": "米軍撤退が現実化する!?日米同盟のコストとリターン構造について紹介します！",
         "thumbnail": "https://img.youtube.com/vi/ZHR98tyI7mY/maxresdefault.jpg",
         "description": "最新の動画内容についてはYouTubeでご確認ください。",
         "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:d72b4d22-9e5a-4e97-914b-b2c57316cd42",
