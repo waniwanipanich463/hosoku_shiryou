@@ -1,5 +1,13 @@
 const videoData = [
     {
+        "id": "RUPgIBj2qXU",
+        "title": "【衝撃の真実】南米の経済成長を止める「絶望的な地形」と、世界地図を塗り替える中国の巨大インフラ計画",
+        "thumbnail": "https://img.youtube.com/vi/RUPgIBj2qXU/maxresdefault.jpg",
+        "description": "最新の動画内容についてはYouTubeでご確認ください。",
+        "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:e8efa462-1bef-4896-b1b5-ac8800fc3811",
+        "publishedDate": "2026/04/14"
+    },
+    {
         "id": "0dTr8uwT5u4",
         "title": "【2026年最新】メディアが隠す日本財政の真実。高市政権の「サナエノミクス」で経済はどう変わるのか？",
         "thumbnail": "https://img.youtube.com/vi/0dTr8uwT5u4/maxresdefault.jpg",
