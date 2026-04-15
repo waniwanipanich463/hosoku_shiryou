@@ -1,5 +1,13 @@
 const videoData = [
     {
+        "id": "Ocv2HdSh2R4",
+        "title": "思考停止のインデックス投資は危険？大衆心理の逆を突く攻守のPER戦略を徹底解説！",
+        "thumbnail": "https://img.youtube.com/vi/Ocv2HdSh2R4/maxresdefault.jpg",
+        "description": "最新の動画内容についてはYouTubeでご確認ください。",
+        "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:b92ed7ff-33eb-462f-b742-50b35f559b1f",
+        "publishedDate": "2026/04/15"
+    },
+    {
         "id": "RUPgIBj2qXU",
         "title": "【衝撃の真実】南米の経済成長を止める「絶望的な地形」と、世界地図を塗り替える中国の巨大インフラ計画",
         "thumbnail": "https://img.youtube.com/vi/RUPgIBj2qXU/maxresdefault.jpg",
