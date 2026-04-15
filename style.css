@@ -191,13 +191,12 @@ h1 {
     text-transform: uppercase;
     font-family: 'Orbitron', sans-serif;
     font-weight: bold;
-    font-size: 1.2rem;
-    letter-spacing: 3px;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
     position: relative;
     transition: all 0.3s ease;
     box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
     text-shadow: 0 0 10px var(--yellow);
-    white-space: nowrap;
     z-index: 10;
 }
 
@@ -343,9 +342,15 @@ h1 {
 
 .card-content {
     padding: 20px;
+    padding-bottom: 10px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+}
+
+.card-footer {
+    padding: 20px;
+    padding-top: 0;
 }
 
 .card h3 {

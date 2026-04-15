@@ -71,7 +71,7 @@ function parseYouTubeRSS(xml) {
                     id,
                     title: title.trim(),
                     thumbnail: `https://img.youtube.com/vi/${id}/maxresdefault.jpg`,
-                    description: "最新の動画内容についてはYouTubeでご確認ください。",
+                    description: "",
                     published: pubDate
                 });
             }
