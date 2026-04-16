@@ -198,6 +198,8 @@ h1 {
     box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
     text-shadow: 0 0 10px var(--yellow);
     z-index: 10;
+    white-space: normal;
+    line-height: 1.4;
 }
 
 .header-cta-btn:hover {
@@ -227,9 +229,12 @@ h1 {
 
 @media (max-width: 600px) {
     .header-cta-btn {
-        font-size: 0.9rem;
-        padding: 12px 20px;
-        letter-spacing: 1px;
+        font-size: 0.85rem;
+        padding: 15px 20px;
+        letter-spacing: 0.5px;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
