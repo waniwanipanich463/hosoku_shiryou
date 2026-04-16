@@ -1,5 +1,13 @@
 const videoData = [
     {
+        "id": "bh4bzvDqA_8",
+        "title": "【40代〜60代必見】現金を銀行に預けたままだと手遅れになります…歴史的暴落を圧倒的なチャンスに変える投資ルールを解説します！",
+        "thumbnail": "https://img.youtube.com/vi/bh4bzvDqA_8/maxresdefault.jpg",
+        "description": "",
+        "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:88e4509f-48e3-452b-9570-7fa2556219f2",
+        "publishedDate": "2026/04/16"
+    },
+    {
         "id": "Ocv2HdSh2R4",
         "title": "思考停止のインデックス投資は危険？大衆心理の逆を突く攻守のPER戦略を徹底解説！",
         "thumbnail": "https://img.youtube.com/vi/Ocv2HdSh2R4/maxresdefault.jpg",
@@ -110,14 +118,6 @@ const videoData = [
         "description": "",
         "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:991ee9b7-7566-418d-86ce-6ae6bd63f206",
         "publishedDate": "2026/04/02"
-    },
-    {
-        "id": "QqAHinC-VAE",
-        "title": "日本低迷の今後はこうなる!?インフレと円安でどう生き抜くか紹介します！",
-        "thumbnail": "https://img.youtube.com/vi/QqAHinC-VAE/maxresdefault.jpg",
-        "description": "",
-        "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:791e9b37-017c-47bc-96bc-b5b00606014d",
-        "publishedDate": "2026/04/01"
     }
 ];
 
