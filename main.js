@@ -1,5 +1,13 @@
 const videoData = [
     {
+        "id": "6WsgJLGhfnY",
+        "title": "40代・50代は絶対に見て！格差が急拡大する日本で持たざる者にならないための投資の絶対ルールを教えます！",
+        "thumbnail": "https://img.youtube.com/vi/6WsgJLGhfnY/maxresdefault.jpg",
+        "description": "",
+        "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:93945901-fba1-46b6-8f19-ae402d79d2da",
+        "publishedDate": "2026/04/17"
+    },
+    {
         "id": "bh4bzvDqA_8",
         "title": "【40代〜60代必見】現金を銀行に預けたままだと手遅れになります…歴史的暴落を圧倒的なチャンスに変える投資ルールを解説します！",
         "thumbnail": "https://img.youtube.com/vi/bh4bzvDqA_8/maxresdefault.jpg",
@@ -110,14 +118,6 @@ const videoData = [
         "description": "",
         "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:e2e864c8-8f3c-432f-8695-2537ee19cfbe",
         "publishedDate": "2026/04/03"
-    },
-    {
-        "id": "5oCl_wADe7E",
-        "title": "インフレと円安!?更に社会保険料増により今後の日本でどう生き残るか紹介します！",
-        "thumbnail": "https://img.youtube.com/vi/5oCl_wADe7E/maxresdefault.jpg",
-        "description": "",
-        "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:991ee9b7-7566-418d-86ce-6ae6bd63f206",
-        "publishedDate": "2026/04/02"
     }
 ];
 
