@@ -1,5 +1,13 @@
 const videoData = [
     {
+        "id": "RMzzt5p-daQ",
+        "title": "【実話】インフレが引き裂いた「ユーゴスラビア」の悲劇とは？現代日本で資産を失わないための絶対法則を教えます",
+        "thumbnail": "https://img.youtube.com/vi/RMzzt5p-daQ/maxresdefault.jpg",
+        "description": "",
+        "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:28b46fbf-ccaf-418d-bbbc-d6a948abd53a",
+        "publishedDate": "2026/04/18"
+    },
+    {
         "id": "6WsgJLGhfnY",
         "title": "40代・50代は絶対に見て！格差が急拡大する日本で持たざる者にならないための投資の絶対ルールを教えます！",
         "thumbnail": "https://img.youtube.com/vi/6WsgJLGhfnY/maxresdefault.jpg",
@@ -110,14 +118,6 @@ const videoData = [
         "description": "",
         "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:09f2a899-98e1-4b1f-979c-7bf69b9d42a8",
         "publishedDate": "2026/04/04"
-    },
-    {
-        "id": "0wIXfCqqQLA",
-        "title": "金価格高騰の裏側!?金が高いのではなく日本円の価値が崩壊している実態について紹介します！",
-        "thumbnail": "https://img.youtube.com/vi/0wIXfCqqQLA/maxresdefault.jpg",
-        "description": "",
-        "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:e2e864c8-8f3c-432f-8695-2537ee19cfbe",
-        "publishedDate": "2026/04/03"
     }
 ];
 
