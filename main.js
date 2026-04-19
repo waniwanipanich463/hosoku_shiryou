@@ -1,7 +1,7 @@
 const videoData = [
     {
         "id": "Ifuy88Zadhk",
-        "title": "【韓国経済の終焉】たった2日で67兆円消失！メディアが報じない歴史的大暴落と構造的崩壊の真実を徹底解説！",
+        "title": "634兆ウォン（約67兆円）消失!?韓国の株式市場で何が起きてるのか解説します！",
         "thumbnail": "https://img.youtube.com/vi/Ifuy88Zadhk/maxresdefault.jpg",
         "description": "",
         "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:01e4ec83-14ae-4a62-bf0c-af65767d4246",
