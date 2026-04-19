@@ -1,5 +1,13 @@
 const videoData = [
     {
+        "id": "Ifuy88Zadhk",
+        "title": "【韓国経済の終焉】たった2日で67兆円消失！メディアが報じない歴史的大暴落と構造的崩壊の真実を徹底解説！",
+        "thumbnail": "https://img.youtube.com/vi/Ifuy88Zadhk/maxresdefault.jpg",
+        "description": "",
+        "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:01e4ec83-14ae-4a62-bf0c-af65767d4246",
+        "publishedDate": "2026/04/19"
+    },
+    {
         "id": "RMzzt5p-daQ",
         "title": "【実話】インフレが引き裂いた「ユーゴスラビア」の悲劇とは？現代日本で資産を失わないための絶対法則を教えます",
         "thumbnail": "https://img.youtube.com/vi/RMzzt5p-daQ/maxresdefault.jpg",
@@ -110,14 +118,6 @@ const videoData = [
         "description": "",
         "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:c071d4c1-283d-402b-94ee-271af9916cdc",
         "publishedDate": "2026/04/05"
-    },
-    {
-        "id": "TmzSvhCD-gQ",
-        "title": "日本の不動産市場に大打撃!?中国人富裕層が日本の不動産を大量売却している裏側について紹介！",
-        "thumbnail": "https://img.youtube.com/vi/TmzSvhCD-gQ/maxresdefault.jpg",
-        "description": "",
-        "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:09f2a899-98e1-4b1f-979c-7bf69b9d42a8",
-        "publishedDate": "2026/04/04"
     }
 ];
 
