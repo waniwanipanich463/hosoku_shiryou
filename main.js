@@ -1,5 +1,13 @@
 const videoData = [
     {
+        "id": "gEJ8I5dImOo",
+        "title": "お金持ちと貧乏人の決定的な違いはコレ。一生貧乏でいたくない人は絶対見てください。",
+        "thumbnail": "https://img.youtube.com/vi/gEJ8I5dImOo/maxresdefault.jpg",
+        "description": "",
+        "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:ac052867-7843-409c-89f9-aabc508449ab",
+        "publishedDate": "2026/04/20"
+    },
+    {
         "id": "Ifuy88Zadhk",
         "title": "634兆ウォン（約67兆円）消失!?韓国の株式市場で何が起きてるのか解説します！",
         "thumbnail": "https://img.youtube.com/vi/Ifuy88Zadhk/maxresdefault.jpg",
@@ -110,14 +118,6 @@ const videoData = [
         "description": "",
         "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:cd333a79-a9bb-4474-9e0a-2061b8eec0dc",
         "publishedDate": "2026/04/06"
-    },
-    {
-        "id": "hoPVcuHzmrc",
-        "title": "緊迫した中東戦争!?世界的な供給ショックとインフレの正体について紹介します！",
-        "thumbnail": "https://img.youtube.com/vi/hoPVcuHzmrc/maxresdefault.jpg",
-        "description": "",
-        "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:c071d4c1-283d-402b-94ee-271af9916cdc",
-        "publishedDate": "2026/04/05"
     }
 ];
 
