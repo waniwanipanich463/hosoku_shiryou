@@ -1,5 +1,13 @@
 const videoData = [
     {
+        "id": "sV0ePF5l3KQ",
+        "title": "【中国経済の真実】中国実態GDPの正体と中国の悲惨な未来について解説します",
+        "thumbnail": "https://img.youtube.com/vi/sV0ePF5l3KQ/maxresdefault.jpg",
+        "description": "",
+        "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:fbff50e8-8edf-44aa-9b8f-d63a7a797334",
+        "publishedDate": "2026/04/21"
+    },
+    {
         "id": "gEJ8I5dImOo",
         "title": "お金持ちと貧乏人の決定的な違いはコレ。一生貧乏でいたくない人は絶対見てください。",
         "thumbnail": "https://img.youtube.com/vi/gEJ8I5dImOo/maxresdefault.jpg",
@@ -110,14 +118,6 @@ const videoData = [
         "description": "",
         "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:4f47947a-8ffd-4efa-8132-a74406c8cdc1",
         "publishedDate": "2026/04/07"
-    },
-    {
-        "id": "BgBz4hDXBNw",
-        "title": "2026年4月!?日米の株価上昇する理由について紹介します！",
-        "thumbnail": "https://img.youtube.com/vi/BgBz4hDXBNw/maxresdefault.jpg",
-        "description": "",
-        "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:cd333a79-a9bb-4474-9e0a-2061b8eec0dc",
-        "publishedDate": "2026/04/06"
     }
 ];
 
