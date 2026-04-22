@@ -1,5 +1,13 @@
 const videoData = [
     {
+        "id": "4x15njWKPyY",
+        "title": "【資産形成】資産1,000万円が人生のゴールと言っても過言ではない！？この金額を超えると起こる変化について解説します！",
+        "thumbnail": "https://img.youtube.com/vi/4x15njWKPyY/maxresdefault.jpg",
+        "description": "",
+        "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:e0449f33-6071-4b29-bcd9-844309067e19",
+        "publishedDate": "2026/04/22"
+    },
+    {
         "id": "sV0ePF5l3KQ",
         "title": "【中国経済の真実】中国実態GDPの正体と中国の悲惨な未来について解説します",
         "thumbnail": "https://img.youtube.com/vi/sV0ePF5l3KQ/maxresdefault.jpg",
@@ -110,14 +118,6 @@ const videoData = [
         "description": "",
         "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:3f3af979-75d3-433a-bd37-27cf18e7e1ab",
         "publishedDate": "2026/04/08"
-    },
-    {
-        "id": "A6TEzPAZL3k",
-        "title": "通貨帝国アメリカの崩壊!?超大富豪達は●●をする理由を紹介します！",
-        "thumbnail": "https://img.youtube.com/vi/A6TEzPAZL3k/maxresdefault.jpg",
-        "description": "",
-        "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:4f47947a-8ffd-4efa-8132-a74406c8cdc1",
-        "publishedDate": "2026/04/07"
     }
 ];
 
