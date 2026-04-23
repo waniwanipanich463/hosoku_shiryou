@@ -1,5 +1,13 @@
 const videoData = [
     {
+        "id": "yKahbMpB90c",
+        "title": "富裕層を目指す人はこれさえ覚えておけば資産運用は完璧！大切な資産を守りたい人は絶対に見てください！",
+        "thumbnail": "https://img.youtube.com/vi/yKahbMpB90c/maxresdefault.jpg",
+        "description": "",
+        "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:8bb3587e-6bb4-4661-86e4-b65f2d965a2b",
+        "publishedDate": "2026/04/23"
+    },
+    {
         "id": "4x15njWKPyY",
         "title": "【資産形成】資産1,000万円が人生のゴールと言っても過言ではない！？この金額を超えると起こる変化について解説します！",
         "thumbnail": "https://img.youtube.com/vi/4x15njWKPyY/maxresdefault.jpg",
@@ -110,14 +118,6 @@ const videoData = [
         "description": "",
         "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:fea19872-d01f-46a0-a5b3-d96d63159cf9",
         "publishedDate": "2026/04/09"
-    },
-    {
-        "id": "A5Qdq3CMtWc",
-        "title": "弱肉強食のディールの時代!?自由貿易の終焉と新たな戦場について紹介します！",
-        "thumbnail": "https://img.youtube.com/vi/A5Qdq3CMtWc/maxresdefault.jpg",
-        "description": "",
-        "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:3f3af979-75d3-433a-bd37-27cf18e7e1ab",
-        "publishedDate": "2026/04/08"
     }
 ];
 
