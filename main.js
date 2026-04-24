@@ -1,5 +1,13 @@
 const videoData = [
     {
+        "id": "TCUs28gq62A",
+        "title": "【超衝撃】世界最高峰の都市がわずか数ヶ月で完全内部崩壊…NYで起きた『恐ろしすぎる現実』と日本の末路",
+        "thumbnail": "https://img.youtube.com/vi/TCUs28gq62A/maxresdefault.jpg",
+        "description": "",
+        "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:863caa06-b88c-49cf-bce0-e6b60d12816d",
+        "publishedDate": "2026/04/24"
+    },
+    {
         "id": "yKahbMpB90c",
         "title": "富裕層を目指す人はこれさえ覚えておけば資産運用は完璧！大切な資産を守りたい人は絶対に見てください！",
         "thumbnail": "https://img.youtube.com/vi/yKahbMpB90c/maxresdefault.jpg",
@@ -110,14 +118,6 @@ const videoData = [
         "description": "",
         "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:2ecef62c-e6c7-49c3-be43-44201bfef3df",
         "publishedDate": "2026/04/10"
-    },
-    {
-        "id": "LzopubzzXjA",
-        "title": "バフェット氏が残した警告とは!?資産運用をしてる人に知ってほしいことについてお話します！",
-        "thumbnail": "https://img.youtube.com/vi/LzopubzzXjA/maxresdefault.jpg",
-        "description": "",
-        "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:fea19872-d01f-46a0-a5b3-d96d63159cf9",
-        "publishedDate": "2026/04/09"
     }
 ];
 
