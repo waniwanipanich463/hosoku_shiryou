@@ -1,5 +1,13 @@
 const videoData = [
     {
+        "id": "4HIv8eShUEk",
+        "title": "【実質増税】ただ貯金だけしている人は確実に詰む！？株高不況で広がる絶望的格差の正体について解説します！",
+        "thumbnail": "https://img.youtube.com/vi/4HIv8eShUEk/maxresdefault.jpg",
+        "description": "",
+        "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:8044df73-5c12-4c95-b30b-8f66b2576659",
+        "publishedDate": "2026/04/25"
+    },
+    {
         "id": "TCUs28gq62A",
         "title": "【超衝撃】世界最高峰の都市がわずか数ヶ月で完全内部崩壊…NYで起きた『恐ろしすぎる現実』と日本の末路",
         "thumbnail": "https://img.youtube.com/vi/TCUs28gq62A/maxresdefault.jpg",
@@ -110,14 +118,6 @@ const videoData = [
         "description": "",
         "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:d72b4d22-9e5a-4e97-914b-b2c57316cd42",
         "publishedDate": "2026/04/11"
-    },
-    {
-        "id": "QHgelc032j8",
-        "title": "アメリカと中国!?壮大な国家間競争の背景について紹介します！",
-        "thumbnail": "https://img.youtube.com/vi/QHgelc032j8/maxresdefault.jpg",
-        "description": "",
-        "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:2ecef62c-e6c7-49c3-be43-44201bfef3df",
-        "publishedDate": "2026/04/10"
     }
 ];
 
