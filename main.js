@@ -1,5 +1,13 @@
 const videoData = [
     {
+        "id": "hYVJCILZWA4",
+        "title": "ロシア経済の内部崩壊が始まった…石油インフラ壊滅と金融自爆で起きた恐ろしすぎる現実を解説します",
+        "thumbnail": "https://img.youtube.com/vi/hYVJCILZWA4/maxresdefault.jpg",
+        "description": "",
+        "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:984ffbae-0c94-4119-a84b-e4a756f1d79e",
+        "publishedDate": "2026/04/26"
+    },
+    {
         "id": "4HIv8eShUEk",
         "title": "【実質増税】ただ貯金だけしている人は確実に詰む！？株高不況で広がる絶望的格差の正体について解説します！",
         "thumbnail": "https://img.youtube.com/vi/4HIv8eShUEk/maxresdefault.jpg",
@@ -110,14 +118,6 @@ const videoData = [
         "description": "",
         "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:aa2b64fa-ce9d-4cbd-8930-617ce2312cd0",
         "publishedDate": "2026/04/12"
-    },
-    {
-        "id": "ZHR98tyI7mY",
-        "title": "米軍撤退が現実化する!?日米同盟のコストとリターン構造について紹介します！",
-        "thumbnail": "https://img.youtube.com/vi/ZHR98tyI7mY/maxresdefault.jpg",
-        "description": "",
-        "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:d72b4d22-9e5a-4e97-914b-b2c57316cd42",
-        "publishedDate": "2026/04/11"
     }
 ];
 
