@@ -1,5 +1,13 @@
 const videoData = [
     {
+        "id": "WAVuOwtSj40",
+        "title": "【経済危機】中東動乱で日本経済は心肺停止へ…ホルムズ海峡封鎖の脅威と資産を守り抜くための完全ロードマップ",
+        "thumbnail": "https://img.youtube.com/vi/WAVuOwtSj40/maxresdefault.jpg",
+        "description": "",
+        "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:2988c05f-0146-4100-9e9b-9d3836ec28ef",
+        "publishedDate": "2026/04/27"
+    },
+    {
         "id": "hYVJCILZWA4",
         "title": "ロシア経済の内部崩壊が始まった…石油インフラ壊滅と金融自爆で起きた恐ろしすぎる現実を解説します",
         "thumbnail": "https://img.youtube.com/vi/hYVJCILZWA4/maxresdefault.jpg",
@@ -110,14 +118,6 @@ const videoData = [
         "description": "",
         "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:fbc1b7e6-c7a8-4192-81c4-19051825e2b5",
         "publishedDate": "2026/04/13"
-    },
-    {
-        "id": "iu8m2SVaOf4",
-        "title": "【投資家必見】知らないと老後破綻する！？国に資産を奪われる残酷なお金のルール変更と資産を防衛するための対策について解説します！",
-        "thumbnail": "https://img.youtube.com/vi/iu8m2SVaOf4/maxresdefault.jpg",
-        "description": "",
-        "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:aa2b64fa-ce9d-4cbd-8930-617ce2312cd0",
-        "publishedDate": "2026/04/12"
     }
 ];
 
