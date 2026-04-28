@@ -1,5 +1,13 @@
 const videoData = [
     {
+        "id": "vrFgFigCmi0",
+        "title": "【資本主義の末路】家賃70万で中間層が崩壊。アメリカの残酷すぎる現実と日本への波及について解説します！",
+        "thumbnail": "https://img.youtube.com/vi/vrFgFigCmi0/maxresdefault.jpg",
+        "description": "",
+        "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:0b61c03f-f499-47ef-abbe-b01f7110f639",
+        "publishedDate": "2026/04/28"
+    },
+    {
         "id": "WAVuOwtSj40",
         "title": "【経済危機】中東動乱で日本経済は心肺停止へ…ホルムズ海峡封鎖の脅威と資産を守り抜くための完全ロードマップ",
         "thumbnail": "https://img.youtube.com/vi/WAVuOwtSj40/maxresdefault.jpg",
@@ -110,14 +118,6 @@ const videoData = [
         "description": "",
         "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:e8efa462-1bef-4896-b1b5-ac8800fc3811",
         "publishedDate": "2026/04/14"
-    },
-    {
-        "id": "0dTr8uwT5u4",
-        "title": "【2026年最新】メディアが隠す日本財政の真実。高市政権の「サナエノミクス」で経済はどう変わるのか？",
-        "thumbnail": "https://img.youtube.com/vi/0dTr8uwT5u4/maxresdefault.jpg",
-        "description": "",
-        "downloadUrl": "https://acrobat.adobe.com/id/urn:aaid:sc:AP:fbc1b7e6-c7a8-4192-81c4-19051825e2b5",
-        "publishedDate": "2026/04/13"
     }
 ];
 
