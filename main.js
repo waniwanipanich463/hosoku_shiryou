@@ -1,5 +1,13 @@
 const videoData = [
     {
+        "id": "f02FpMhkGLY",
+        "title": "米国の実態を知らずに投資している思考停止の常識について紹介します！",
+        "thumbnail": "https://img.youtube.com/vi/f02FpMhkGLY/maxresdefault.jpg",
+        "description": "",
+        "downloadUrl": "https://drive.google.com/file/d/1oTlcod1CkLSa3bG8hTdRai9N8E9utOAo/view?usp=drive_link",
+        "publishedDate": "2026/05/08"
+    },
+    {
         "id": "22NR4lGWRZk",
         "title": "インフレという「静かな強盗」が進行中！？実質的な購買力は日々奪われている現実を紹介します！",
         "thumbnail": "https://img.youtube.com/vi/22NR4lGWRZk/maxresdefault.jpg",
