@@ -1,5 +1,13 @@
 const videoData = [
     {
+        "id": "E7ragc8n6IY",
+        "title": "1946年の「預金封鎖」の歴史的恐怖！40代50代の資産が奪われる前に対策することについて紹介します！",
+        "thumbnail": "https://img.youtube.com/vi/E7ragc8n6IY/maxresdefault.jpg",
+        "description": "",
+        "downloadUrl": "https://drive.google.com/file/d/1LHRyuXLzqm7oy-ikqq32LPnTnarFvMOn/view?usp=drive_link",
+        "publishedDate": "2026/05/09"
+    },
+    {
         "id": "f02FpMhkGLY",
         "title": "米国の実態を知らずに投資している思考停止の常識について紹介します！",
         "thumbnail": "https://img.youtube.com/vi/f02FpMhkGLY/maxresdefault.jpg",
