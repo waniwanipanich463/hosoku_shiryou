@@ -1,5 +1,13 @@
 const videoData = [
     {
+        "id": "d7gM4p_uCxY",
+        "title": "1杯1,400円のスタバが暗示するアメリカ中間層の消滅について解説します！",
+        "thumbnail": "https://img.youtube.com/vi/d7gM4p_uCxY/maxresdefault.jpg",
+        "description": "",
+        "downloadUrl": "https://drive.google.com/file/d/1Ur77Fshu2EA8-_h3EFc2DyaXdo6FNz66/view?usp=drive_link",
+        "publishedDate": "2026/05/10"
+    },
+    {
         "id": "E7ragc8n6IY",
         "title": "1946年の「預金封鎖」の歴史的恐怖！40代50代の資産が奪われる前に対策することについて紹介します！",
         "thumbnail": "https://img.youtube.com/vi/E7ragc8n6IY/maxresdefault.jpg",
