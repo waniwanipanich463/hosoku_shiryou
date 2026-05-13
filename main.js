@@ -1,5 +1,13 @@
 const videoData = [
     {
+        "id": "qG8Jy5fve5Q",
+        "title": "S&amp;P500への思考停止の投資は危険。米国の若者を食いつぶす絶望の人口負債と米国株信仰の罠を解説！",
+        "thumbnail": "https://img.youtube.com/vi/qG8Jy5fve5Q/maxresdefault.jpg",
+        "description": "",
+        "downloadUrl": "https://docs.google.com/presentation/d/1TPjDPrXpXFRA_dX8zrzMdkPcBxattcZL/edit?usp=drive_link&ouid=100224871210201432380&rtpof=true&sd=true",
+        "publishedDate": "2026/05/13"
+    },
+    {
         "id": "4lheh7b6hSA",
         "title": "NISAを頑張ってもお金が増えない理由。金融業界に搾取される利回りジャンキーが陥るリスクとは？",
         "thumbnail": "https://img.youtube.com/vi/4lheh7b6hSA/maxresdefault.jpg",
